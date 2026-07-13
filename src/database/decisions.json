@@ -1,1 +1,199 @@
-[]
+[
+  {
+    "id": 1783962752408,
+    "timestamp": "2026-07-13T17:12:32.408Z",
+    "question": "What's your name?",
+    "recommendation": "I am Helix AI, a Decision Intelligence Assistant.",
+    "confidence": 100,
+    "cost": "Low",
+    "timeline": "Immediate",
+    "pros": [
+      "Provides objective decision analysis",
+      "Structured and professional responses"
+    ],
+    "cons": [
+      "Limited to JSON format responses",
+      "Cannot engage in casual conversation"
+    ],
+    "risks": [
+      "Misinterpretation of user queries",
+      "Over-reliance on structured responses"
+    ],
+    "nextSteps": [
+      "Proceed with your decision analysis query"
+    ]
+  },
+  {
+    "id": 1783962702437,
+    "timestamp": "2026-07-13T17:11:42.437Z",
+    "question": "Should I learn Rust?",
+    "recommendation": "Yes, learning Rust is a valuable investment for your programming skills.",
+    "confidence": 85,
+    "cost": "Low",
+    "timeline": "3-6 months to become proficient",
+    "pros": [
+      "Rust offers high performance and memory safety.",
+      "Growing demand for Rust developers in the industry.",
+      "Strong community support and active development.",
+      "Excellent for systems programming and web assembly."
+    ],
+    "cons": [
+      "Steeper learning curve compared to other languages.",
+      "Smaller ecosystem than more established languages like Python or JavaScript."
+    ],
+    "risks": [
+      "May not be immediately applicable depending on your current job or projects.",
+      "Limited learning resources compared to more popular languages."
+    ],
+    "nextSteps": [
+      "Start with the official Rust documentation and tutorials.",
+      "Join Rust communities for support and networking.",
+      "Work on small projects to practice and build a portfolio."
+    ]
+  },
+  {
+    "id": 1783962683798,
+    "timestamp": "2026-07-13T17:11:23.798Z",
+    "question": "Should I buy a MacBook Air M4?",
+    "recommendation": "Yes, if you prioritize portability, battery life, and performance for everyday tasks.",
+    "confidence": 85,
+    "cost": "High",
+    "timeline": "Immediate purchase",
+    "pros": [
+      "Excellent battery life",
+      "Lightweight and portable",
+      "Powerful M4 chip for most tasks",
+      "High-quality display and build",
+      "Seamless integration with Apple ecosystem"
+    ],
+    "cons": [
+      "Limited ports (only USB-C)",
+      "Not ideal for heavy gaming or professional workloads",
+      "Higher price compared to some Windows alternatives"
+    ],
+    "risks": [
+      "Potential compatibility issues with non-Apple software",
+      "Limited upgradeability (RAM and storage are fixed)"
+    ],
+    "nextSteps": [
+      "Compare with other models (e.g., MacBook Pro) based on your needs",
+      "Check for student or corporate discounts",
+      "Review return policy in case it doesn't meet expectations"
+    ]
+  },
+  {
+    "id": 1783962158436,
+    "timestamp": "2026-07-13T17:02:38.436Z",
+    "question": "Should I use PostgreSQL or MongoDB?",
+    "recommendation": "The choice between PostgreSQL and MongoDB depends on your specific use case. If your application requires complex queries, transactions, and structured data with relationships, PostgreSQL is the better choice. If your application deals with unstructured or semi-structured data, requires high scalability, and flexible schema, MongoDB is more suitable.",
+    "confidence": 90,
+    "cost": "Medium",
+    "timeline": "1-4 weeks for evaluation and setup, depending on complexity",
+    "pros": {
+      "PostgreSQL": [
+        "Strong support for complex queries and joins",
+        "ACID compliance for reliable transactions",
+        "Mature and stable with extensive features",
+        "Excellent for structured data with relationships"
+      ],
+      "MongoDB": [
+        "Flexible schema for unstructured or semi-structured data",
+        "High scalability and performance for large datasets",
+        "Easy horizontal scaling with sharding",
+        "Good for rapid development and iterative changes"
+      ]
+    },
+    "cons": {
+      "PostgreSQL": [
+        "Less flexible schema compared to MongoDB",
+        "Scaling horizontally can be more challenging",
+        "May require more maintenance for complex setups"
+      ],
+      "MongoDB": [
+        "Weaker support for complex transactions",
+        "Joins are less efficient compared to relational databases",
+        "Less mature in terms of tooling and ecosystem for some use cases"
+      ]
+    },
+    "risks": {
+      "PostgreSQL": [
+        "Potential performance bottlenecks with very high write loads",
+        "Complexity in scaling out for massive datasets"
+      ],
+      "MongoDB": [
+        "Data consistency issues in distributed environments",
+        "Potential for schema design errors due to flexibility"
+      ]
+    },
+    "nextSteps": [
+      "Assess your data structure and query requirements",
+      "Evaluate the scalability needs of your application",
+      "Consider the team's familiarity with each database",
+      "Run performance tests with sample data if possible",
+      "Make a prototype or proof of concept with the top candidate"
+    ]
+  },
+  {
+    "id": 1783962122791,
+    "timestamp": "2026-07-13T17:02:02.791Z",
+    "question": "Should I learn Rust in 2026?",
+    "recommendation": "Yes, learning Rust in 2026 is a good investment, assuming its adoption continues to grow and it remains relevant for systems programming, performance-critical applications, and security-focused development.",
+    "confidence": 80,
+    "cost": "Low to Medium (free resources available, but paid courses or books may help).",
+    "timeline": "3-6 months to gain proficiency, depending on prior programming experience.",
+    "pros": [
+      "High performance and memory safety due to ownership model.",
+      "Growing adoption in industries like blockchain, game development, and embedded systems.",
+      "Strong community support and active development.",
+      "Increasing demand for Rust developers in the job market."
+    ],
+    "cons": [
+      "Steeper learning curve compared to other languages like Python or JavaScript.",
+      "Smaller ecosystem compared to more established languages.",
+      "Potential for newer languages or technologies to overshadow Rust by 2026."
+    ],
+    "risks": [
+      "Rust's popularity may plateau or decline if a superior alternative emerges.",
+      "Limited job opportunities if adoption slows in certain industries."
+    ],
+    "nextSteps": [
+      "Monitor Rust's adoption trends and job market demand leading up to 2026.",
+      "Start with free resources like 'The Rust Book' (official documentation) or online tutorials.",
+      "Build small projects to practice and gauge personal interest."
+    ]
+  },
+  {
+    "id": 1783962102519,
+    "timestamp": "2026-07-13T17:01:42.519Z",
+    "question": "Should I buy a MacBook Air M4 for AI development?",
+    "recommendation": "Consider buying the MacBook Air M4 for AI development if your workload primarily involves lightweight AI tasks, prototyping, or learning. However, for heavy-duty AI training or large-scale models, a more powerful machine (e.g., MacBook Pro with M3 Pro/Max or a high-end Windows/Linux workstation with dedicated GPU) may be more suitable.",
+    "confidence": 80,
+    "cost": "High (Premium pricing for Apple products)",
+    "timeline": "Immediate (if available)",
+    "pros": [
+      "Energy-efficient and portable",
+      "Strong single-core performance for general development",
+      "Long battery life",
+      "Silent operation (no fans)",
+      "macOS offers a stable Unix-based environment"
+    ],
+    "cons": [
+      "Limited GPU capabilities compared to dedicated GPUs",
+      "Potential thermal throttling under sustained heavy loads",
+      "Less RAM capacity compared to pro models (may affect large models)",
+      "Limited software compatibility for some AI frameworks optimized for CUDA"
+    ],
+    "risks": [
+      "May struggle with training large neural networks",
+      "Future AI tools might require more GPU power",
+      "Limited upgradeability"
+    ],
+    "nextSteps": [
+      "Assess your specific AI development needs (lightweight vs. heavy training)",
+      "Compare benchmarks for your typical workloads",
+      "Consider cloud-based AI development options if heavy computation is needed",
+      "Evaluate alternatives like MacBook Pro or Windows/Linux machines with dedicated GPUs",
+      "Check compatibility of your preferred AI frameworks with Apple Silicon"
+    ]
+  }
+]

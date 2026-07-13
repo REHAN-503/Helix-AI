@@ -7,6 +7,7 @@ export async function decisionCommand({ message, say }) {
   const blocks = buildDecisionCard(result);
 
   await say({
+    text: `Helix AI Decision Analysis: ${result.recommendation}`,
     blocks,
   });
 }

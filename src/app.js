@@ -3,6 +3,7 @@ import { App } from "@slack/bolt";
 
 import { helloCommand } from "./commands/hello.js";
 import { helpCommand } from "./commands/help.js";
+import { historyCommand } from "./commands/history.js";
 import { decisionCommand } from "./commands/decision.js";
 
 dotenv.config();
@@ -17,7 +18,6 @@ const app = new App({
 app.message(async ({ message, say }) => {
   try {
     if (message.subtype) return;
-
     if (!message.text) return;
 
     console.log(`📩 ${message.text}`);
@@ -33,15 +33,11 @@ app.message(async ({ message, say }) => {
     }
 
     if (text === "history") {
-      return await say(
-        "📚 Decision history is coming in the next update."
-      );
+      return await historyCommand({ say });
     }
 
     if (text.startsWith("compare ")) {
-      return await say(
-        "⚖️ Decision comparison is coming soon."
-      );
+      return await say("⚖️ Decision comparison is coming soon.");
     }
 
     await decisionCommand({ message, say });
@@ -49,9 +45,7 @@ app.message(async ({ message, say }) => {
   } catch (error) {
     console.error("App Error:", error);
 
-    await say(
-      "❌ Sorry, something went wrong while processing your request."
-    );
+    await say("❌ Sorry, something went wrong while processing your request.");
   }
 });
 

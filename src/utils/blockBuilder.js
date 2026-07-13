@@ -1,3 +1,15 @@
+function formatList(value) {
+  if (Array.isArray(value)) {
+    return value.length ? "• " + value.join("\n• ") : "• None";
+  }
+
+  if (typeof value === "string") {
+    return `• ${value}`;
+  }
+
+  return "• None";
+}
+
 export function buildDecisionCard(result) {
   return [
     {
@@ -25,10 +37,10 @@ export function buildDecisionCard(result) {
       text: {
         type: "mrkdwn",
         text:
-          `*✅ Recommendation*\n${result.recommendation}\n\n` +
-          `*⭐ Confidence:* ${result.confidence}%\n` +
-          `*💰 Cost:* ${result.cost}\n` +
-          `*⏳ Timeline:* ${result.timeline}`,
+          `*✅ Recommendation*\n${result.recommendation || "No recommendation available"}\n\n` +
+          `*⭐ Confidence:* ${result.confidence ?? "N/A"}%\n` +
+          `*💰 Cost:* ${result.cost || "N/A"}\n` +
+          `*⏳ Timeline:* ${result.timeline || "N/A"}`,
       },
     },
 
@@ -40,9 +52,7 @@ export function buildDecisionCard(result) {
       type: "section",
       text: {
         type: "mrkdwn",
-        text:
-          "*👍 Pros*\n• " +
-          result.pros.join("\n• "),
+        text: `*👍 Pros*\n${formatList(result.pros)}`,
       },
     },
 
@@ -50,9 +60,7 @@ export function buildDecisionCard(result) {
       type: "section",
       text: {
         type: "mrkdwn",
-        text:
-          "*⚠ Risks*\n• " +
-          result.risks.join("\n• "),
+        text: `*👎 Cons*\n${formatList(result.cons)}`,
       },
     },
 
@@ -60,9 +68,15 @@ export function buildDecisionCard(result) {
       type: "section",
       text: {
         type: "mrkdwn",
-        text:
-          "*➡ Next Steps*\n• " +
-          result.nextSteps.join("\n• "),
+        text: `*⚠ Risks*\n${formatList(result.risks)}`,
+      },
+    },
+
+    {
+      type: "section",
+      text: {
+        type: "mrkdwn",
+        text: `*➡ Next Steps*\n${formatList(result.nextSteps)}`,
       },
     },
   ];
