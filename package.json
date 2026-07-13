@@ -1,22 +1,19 @@
 {
   "name": "helix-ai",
   "version": "1.0.0",
-  "description": "AI simulates plausible outcomes and trade-offs based on the information provided.",
-  "main": "index.js",
-  "directories": {
-    "doc": "docs"
-  },
+  "description": "AI Decision Intelligence for Teams built for the Slack Agent Builder Challenge.",
+  "main": "src/app.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "node src/app.js",
+    "start": "node src/app.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/REHAN-503/helix-ai.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
+  "author": "REHAN-503",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/REHAN-503/helix-ai/issues"
   },
