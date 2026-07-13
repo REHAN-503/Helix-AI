@@ -1,0 +1,28 @@
+{
+  "name": "helix-ai",
+  "version": "1.0.0",
+  "description": "AI simulates plausible outcomes and trade-offs based on the information provided.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/REHAN-503/helix-ai.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/REHAN-503/helix-ai/issues"
+  },
+  "homepage": "https://github.com/REHAN-503/helix-ai#readme",
+  "dependencies": {
+    "@slack/bolt": "^4.7.3",
+    "dotenv": "^17.4.2"
+  }
+}
